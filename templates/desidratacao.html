@@ -20,12 +20,12 @@
     </header>
     <!-- Fim do cabeçalho padrão -->
     <main>
-        <h1>Calculo de desidratação - fluidoterapia em animais.</h1>
-        <form action="/verificar_quantidade_mililitros_soro" method="post">
-            <label for="peso_animal">Peso do animal:</label>
-            <input type="text" id="peso_animal" name="peso_animal" step="0.01">
+        <h1>Calcule a quantidade de mililitros de <br/> soro que seu animal precisa</h1>
+        <form class="calculo" action="/verificar_quantidade_mililitros_soro" method="post">
+            <label for="peso_animal">Peso do animal:</label><br/>
+            <input type="text" id="peso_animal" name="peso_animal" step="0.01"><br/><br/>
             <label for="grau_desidratacao">Grau de desidratação (leve, moderada ou grave):</label>
-            <input type="text" id="grau_desidratacao" name="grau_desidratacao">
+            <input type="text" id="grau_desidratacao" name="grau_desidratacao"><br/><br/>
             <button type="submit">Calcular</button>
         </form>
         <div id="verificar_quantidade_mililitros_soro">
@@ -33,6 +33,31 @@
                 <p>{{ verificar_quantidade_mililitros_soro }}</p>
             {% endif %}
         </div>
+
+        <div class="rodape">
+            <img src="static/img/cachorro_rodape-removebg-preview.png" alt="cachorros">
+            <p class="text1">INSTITUCIONAL<br/>
+                Quem somos?<br/>
+                Contato<br/>
+                Política de privacidade<br/>
+                Notícias<br/>
+                Depoimento de clientes</p>
+            <p class="text2">ATENDIMENTO<br/>
+                TELEFONE:<br/>
+                (18) 99881-1123<br/>
+                (18) 3632-8922<br/>
+                HORÁRIOS:<br/>
+                segunda à sexta-feira - 8:00 às 12:00</p>
+        </div>
+        <!-- end conteudo do site -->
+    
     </main>
+    
+
+    <!-- rodape -->
+    <footer>
+        <p>© Copyright - 2024 Clínica veterinária. Todos os direitos reservados.</p>
+    </footer>
+    <!-- end rodape -->
 </body>
 </html>
