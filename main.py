@@ -6,7 +6,7 @@ pacientes = []
 
 @app.route('/')
 def index():
-    return render_template('index.html', pacientes=pacientess)
+    return render_template('index.html', pacientes=pacientes)
 
 
 @app.route('/faleconosco')
@@ -65,7 +65,7 @@ def editar_paciente():
 @app.route('/verificar_editar_paciente/<int:codigo>', methods=['GET', 'POST'])
 def verificar_editar_paciente(codigo):
 
-    if request.method == 'POST'
+    if request.method == 'POST':
         nome = request.form['nome']
         raca = request.form['raca']
         especie = request.form['especie']
