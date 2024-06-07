@@ -37,8 +37,7 @@
 .rodape {
     background-color: #5F85A0;
     display: flex;
-    color:white;
-    
+    color:white;  
 }
 
 .rodape img {
@@ -54,6 +53,7 @@
     padding-top: 50px;
     margin: 60px;
 }
+
 .tt{
     background-color: #5F85A0;
     padding-bottom: 50px;

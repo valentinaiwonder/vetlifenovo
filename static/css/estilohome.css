@@ -24,13 +24,14 @@
     background-color: var(--cor-principal);
 }
 
-.botaofunctions {
-
-}
-
 .logo {
     height: 120px;
     width: 120px;
+}
+
+.img_login {
+    height: 50px;
+    width: 50px;
 }
 
 .palavras {
@@ -43,10 +44,10 @@
 }
 
 .textodescritivo {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 270px;
     background-color: #266299;
 }
 
@@ -71,15 +72,15 @@
 .saibamais {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     align-self: end;
-    justify-content: right;
+    justify-content: end;
     color:white;
-    height: 110px;
+    height: 80px;
     width: 200px;
     background-color:rgb(127, 171, 209) ;
     font-weight: 700;
-    align-self:center;
-
+    column: end;
 }
+
 .consulta {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border:none;
@@ -89,15 +90,6 @@
     font-weight: 700px;
 }
 
-.partedoiss {
-    border-radius: 10%;
-    height: 520px;
-    width: 570px;
-    background-color: #E5FAFF;
-    justify-content: center;
-    text-align: center;
-    border-style: none;
-}
 
 .apresentacao {
     height: 700px;
@@ -108,7 +100,7 @@
 }
 
 .botaofunctions {
-    
+    justify-content: space-between;
 }
 
 .botaoidade {
@@ -129,7 +121,30 @@
     background: rgb(127, 171, 209);
 }
 
-/* Início do rodapé */
+/* Informações anteriores ao rodapé CSS */
+.rodape {
+    background-color: #5F85A0;
+    display: flex;
+    color:white;  
+}
+
+.rodape img {
+    width: 300px;
+}
+
+.rodape .text1 {
+    padding-top: 25px;
+    margin: 60px;
+}
+
+.rodape .text2 {
+    padding-top: 25px;
+    margin: 60px;
+}
+/* Fim das informações */
+
+
+/* Início do rodapé CSS*/
 footer {
     background-color: #5cc9fb;
     color: #FFF;
@@ -139,3 +154,4 @@ footer {
     bottom: 0;
     width: 100%;
 }
+/* Fim do rodapé  CSS*/
