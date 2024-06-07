@@ -1,5 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="static/css/estilohome.css">
+</head>
+<body>
+    <!-- Cabeçalho padrão -->
+    <header>
+        <nav class="cabeçalho">
+        <div class="logovet">
+        <img class="logo" src="static/img/logovetlife.jpg"
+        alt="Logo da empresa"/> </div>
+
+        <a href="/"><button class="palavras">HOME</button>
+        </a>
+
+        <a href= "/serviço"><button class="palavras">SERVIÇOS</button>
+        </a>
+
+        <a href="/contato"><button class="palavras">CONTATO</button>
+        </a>
+
+        </nav>
+        </div>
+    </heade>
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +34,48 @@
     <link rel="stylesheet" href="static/css/idadehumana.css">
 </head>
 <body>
-    <h1>Calculadora de Idade Humana do Animal</h1>
+    <div class="tt">
+        <h1 class="kk">Calculadora de Idade Humana do Animal</h1>
+    </div>
+
+    <div class="hh">
     <form action="/verificar_idadehumana" method="post">
-        <label for="idade2">Adicione a idade do animal: </label>
-        <input type="number" id="idade2" name="idade2" required>
+        <label for="idade2" class="ww">Adicione a idade do animal: </label>
         <br>
-        <label for="especie2">Espécie:</label>
-        <input type="text" id="especie2" name="especie2" required>
+        <input class="ii" type="number" id="idade2" name="idade2" required>
+        <br>
+        <label for="especie2" class="jj">Espécie:</label>
+        <br>
+        <input class="oo" type="text" id="especie2" name="especie2" required>
         <br>
         <button type="submit">Calcular</button>
-       
     </form>
+    </div>
+
     <div id="verificar_idadehumana">
         {% if verificar_idadehumana %} <!-- Verifica se há um resultado a ser exibido -->
             {{ verificar_idadehumana }} <!-- Exibe o resultado da verificação (par ou ímpar) -->
         {% endif %}
     </div>
 </body>
+
+<div class="rodape">
+    <img src="static/img/cachorro_rodape-removebg-preview.png" alt="cachorros">
+    <p class="text1">INSTITUCIONAL<br/>
+        Quem somos?<br/>
+        Contato<br/>
+        Política de privacidade<br/>
+        Notícias<br/>
+        Depoimento de clientes</p>
+    <p class="text2">ATENDIMENTO<br/>
+        TELEFONE:<br/>
+        (18) 99881-1123<br/>
+        (18) 3632-8922<br/>
+        HORÁRIOS:<br/>
+        segunda à sexta-feira - 8:00 às 12:00</p>
+</div>
+
+<footer>
+    <p>© Copyright - 2024 Clínica veterinária. Todos os direitos reservados.</p>
+</footer>
 </html>

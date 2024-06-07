@@ -132,7 +132,7 @@ def verificar_idadehumana():
             else:
                 idade_humana = 36 + (idade2 - 5) * 4
 
-        return render_template('idadehumana.html', verificar_idadehumana = f'A idade humana aproximada do {especie.lower()} é de aproximadamente {idade_humana} anos.')
+        return render_template('idadehumana.html', verificar_idadehumana = f'A idade humana aproximada do {especie2.lower()} é de aproximadamente {idade_humana} anos.')
     return render_template('idadehumana.html', verificar_idadehumana = '')
 
 
