@@ -101,6 +101,12 @@
     align-items: center;
 }
 
+.botaoidade {
+    text-align: center;
+    font-size: 20px;
+    border-color: rgb(127, 171, 209);
+}
+
 footer {
     background-color: #5cc9fb;
     color: #FFF;
