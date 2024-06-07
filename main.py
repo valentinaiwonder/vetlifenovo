@@ -149,24 +149,27 @@ def verificar_medicamento_mg():
         medicamento_mg = (peso * doseremedio)
         return render_template('medicamento_mg.html', medicamento_mg=medicamento_mg)
 
+
 @app.route('/desidratacao')
 def desidratacao():
     return render_template('desidratacao.html')
 
+
 @app.route('/verificar_quantidade_mililitros_soro/', methods=['POST'])
 def verificar_quantidade_mililitros_soro():
+        peso_animal = float(request.form['peso_animal'])
+        grau_desidratacao = request.form['grau_desidratacao'].lower()
 
-    peso_animal = float(request.form['peso_animal'])
-    grau_desidatracao = request.form['grau_desidatracao']
-    if grau_desidatracao.lower() == 'leve':
-        volume_fluidoterapia = 50 * peso_animal
-    elif grau_desidatracao.lower() == 'moderada':
-        volume_fluidoterapia = 75 * peso_animal
-    elif grau_desidatracao.lower() == 'grave':
-        volume_fluidoterapia = 100 * peso_animal
+        if grau_desidratacao == 'leve':
+            volume_fluidoterapia = 50 * peso_animal
+        elif grau_desidratacao == 'moderada':
+            volume_fluidoterapia = 75 * peso_animal
+        elif grau_desidratacao == 'grave':
+            volume_fluidoterapia = 100 * peso_animal
+        else:
+            return render_template('desidratacao.html', verificar_quantidade_mililitros_soro='Grau de desidratação inválido.')
 
-    return render_template('desidratacao.html', verificar_quantidade_mililitros_soro = f'O grau de desidratacao é {grau_desidratacao.lower()} e a fluido terapia é de  {volume_fluidoterapia} mls.')
-    return render_template('desidratacao.html', verificar_quantidade_mililitros_soro = '')
+        return render_template('desidratacao.html', verificar_quantidade_mililitros_soro=f'O grau de desidratação é {grau_desidratacao} e a fluidoterapia é de {volume_fluidoterapia} mL.')
 
 
 if __name__ == '__main__':
