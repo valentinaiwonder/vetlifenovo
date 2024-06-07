@@ -64,11 +64,12 @@
 
 .nome {
     font-family:Arial, Helvetica, sans-serif;
-    font-size: 500%;
+    font-size: 200%;
     justify-content: space-between;
     align-self:center;
 }
 
+/* Agendamento */
 .saibamais {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     align-self: end;
@@ -79,6 +80,7 @@
     background-color:rgb(127, 171, 209) ;
     font-weight: 700;
     column: end;
+    font-size: 20px;
 }
 
 .consulta {
@@ -100,6 +102,7 @@
 }
 
 .botaofunctions {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -107,18 +110,21 @@
     padding: 8px;
     font-size: 20px;
     background: rgb(127, 171, 209);
+    border-radius: 25px;
 }
 
 .botaoremedio {
     padding: 8px;
     font-size: 20px;
     background: rgb(127, 171, 209);
+    border-radius: 25px;
 }
 
 .botaosoro {
     padding: 8px;
     font-size: 20px;
     background: rgb(127, 171, 209);
+    border-radius: 25px;
 }
 
 /* Informações anteriores ao rodapé CSS */
