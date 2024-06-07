@@ -16,20 +16,77 @@
 }
 
 .logo {
-    border-radius: 60%;
     height: 120px;
     width: 120px;
 }
 
-.caixa {
-    border
+.caixaa {
+    background-color: #5F85A0;
+    padding-bottom: 15px;
+    padding-top: 15px;
 }
 
-.caixa h1 {
+.caixaa h1 {
     text-align: center;
 }
 
-.imgs {
-    border: 50;
-    flex-direction: row;
+.imgs .um {
+    margin: 80px;
+    border-radius: 12px;
+    
+}
+
+.dois {
+    margin: 80px;
+    border-radius: 12px;
+}
+
+.tres {
+    margin: 80px;
+    border-radius: 12px;
+}
+.quatro {
+    margin: 80px;
+    border-radius: 12px;
+}
+
+.cinco{
+    margin: 80px;
+    border-radius: 12px;
+}
+
+.seis {
+    margin: 80px;
+    border-radius: 12px;
+}
+
+.rodape {
+    background-color: #5F85A0;
+    display: flex;
+    color:white;
+    
+}
+
+.rodape img {
+    width: 300px;
+}
+
+.rodape .text1 {
+    padding-top: 50px;
+    margin: 60px;
+}
+
+.rodape .text2 {
+    padding-top: 50px;
+    margin: 60px;
+}
+
+footer {
+    background-color: #5cc9fb;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
