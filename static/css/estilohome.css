@@ -25,6 +25,7 @@
 }
 
 .logo {
+    border-radius: 60%;
     height: 120px;
     width: 120px;
 }
@@ -98,20 +99,6 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-}
-
-.rodape img {
-    width: 300px;
-}
-
-.rodape .text1 {
-    padding-top: 50px;
-    margin: 60px;
-}
-
-.rodape .text2 {
-    padding-top: 50px;
-    margin: 60px;
 }
 
 footer {
