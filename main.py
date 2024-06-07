@@ -42,8 +42,8 @@ def apagar_consulta():
 
 @app.route('/verificar_apagar_consulta/<int:codigo>')
 def verificar_apagar_consulta(codigo):
-""" Rota para apagar um contato da lista. """ del consultas[codigo]
-return redirect('/index.html/') # Redireciona de volta para a página inicial
+    del consultas[codigo]
+    return redirect('/index.html/') # Redireciona de volta para a página inicial
 
 @app.route('/paciente')
 def paciente():
