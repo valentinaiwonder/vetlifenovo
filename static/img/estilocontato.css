@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --vermelho: red;
+    --branco:azure; 
+    --azulclaro:lightcyan;
+    --cor-principal: rgb(95, 158, 160);
+    --altura: 100px;
+
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items:center;
+    background-color:cornsilk;
+    height: 30vh;
+    gap: 10px;
+    background-color: var(--cor-principal);
+}
+
+.logo {
+    border-radius: 60%;
+    height: 120px;
+    width: 120px;
+}
