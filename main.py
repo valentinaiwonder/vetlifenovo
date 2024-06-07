@@ -42,8 +42,8 @@ def apagar_consulta():
 
 @app.route('/verificar_apagar_consulta/<int:codigo>')
 def verificar_apagar_consulta(codigo):
-""" Rota para apagar um contato da lista. """ del consultas[codigo]
-return redirect('/index.html/') # Redireciona de volta para a página inicial
+    del consultas[codigo]
+    return redirect('/index.html/') # Redireciona de volta para a página inicial
 
 @app.route('/paciente')
 def paciente():
@@ -153,7 +153,6 @@ def verificar_medicamento_mg():
 def desidratacao():
     return render_template('desidratacao.html')
 
-
 @app.route('/verificar_quantidade_mililitros_soro/', methods=['POST'])
 def verificar_quantidade_mililitros_soro():
 
@@ -166,7 +165,9 @@ def verificar_quantidade_mililitros_soro():
     elif grau_desidatracao.lower() == 'grave':
         volume_fluidoterapia = 100 * peso_animal
 
-    return render_template('desidratacao.html')
+    return render_template('desidratacao.html', verificar_quantidade_mililitros_soro = f'O grau de desidratacao é {grau_desidratacao.lower()} e a fluido terapia é de  {volume_fluidoterapia} mls.')
+    return render_template('desidratacao.html', verificar_quantidade_mililitros_soro = '')
+
 
 if __name__ == '__main__':
     app.run(debug=True)
