@@ -2,7 +2,6 @@ from flask import Flask, render_template, request, redirect
 app = Flask(__name__)
 
 consultas = []
-
 pacientes = []
 
 @app.route('/')
@@ -16,10 +15,14 @@ def contato():
 
 @app.route('/serviço')
 def serviço():
+    return render_template('servico.html')
+
+@app.route('/servico.html')
+def serviço():
     return render_template('serviço.html')
 
 @app.route('/agendamento', methods=['GET', 'POST'])
-def agendamento():
+def retorno_agendamento():
     if request.method == 'POST':
         nome_animal = request.form['nome_animal']
         nome_tutor = request.form['nome_tutor']
