@@ -13,6 +13,26 @@
 
 }
 
+.desidratacao {
+    padding-left: 20%;
+    padding-top:4%;
+    padding-bottom: 4%;
+    background-color: #385366;
+}
+
+.body {
+    background-color: var(--cor-principal);
+}
+
+.formulario {
+    padding-top: 3%;
+    padding-bottom: 3%;;
+    background-color: #5F85A0;
+    margin-left: 20%;
+    margin-right: 20%;;
+    border-radius: 5%;
+
+}
 .cabeçalho {
     display: flex;
     justify-content: center;
@@ -21,7 +41,7 @@
     background-color:cornsilk;
     height: 30vh;
     gap: 10px;
-    background-color: var(--cor-principal);
+    background-color: #5f9ea0;
 }
 
 .logo {
@@ -32,8 +52,19 @@
 .palavras {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border:none;
-    background-color:cadetblue;
+    background-color:#5f9ea0;
     color:aliceblue;
     font-size: larger;
     font-weight: 700px;
+}
+
+/* Início do rodapé */
+footer {
+    background-color: #5cc9fb;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
