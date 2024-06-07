@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviço</title>
+    <link rel="stylesheet" href="static/css/estiloserviço.css">
+</head>
+    <body>
+       <!-- Cabeçalho padrão -->
+       <header>
+                <nav class="cabeçalho">
+                    <div class="logovet">
+                        <img class="logo" src="static/img/logovetlife.jpg"
+                            alt="Logo da empresa"/></div>
+
+                    <a href="/"><button class="palavras">HOME</button> </a>
+                    <a href= "/serviço"><button class="palavras">SERVIÇOS</button></a>
+                    <a href="/contato"><button class="palavras">CONTATO</button></a> 
+                </nav>
+        </header>
+        <!-- Fim do cabeçalho padrão -->
+        <main>
+            <h1> 
+                Calculo de desidratação - fluidoterapia em animais.
+            </h1>
+
+                <form action="/verificar_quantidade_mililitros_soro" method = "post">
+                    <label for="peso_animal">Peso do animal:</label>
+                    <input type="text" id="peso" name="peso" step="0.01">
+                    <label for="grau_desidratacao">Grau de desidratação (leve, moderada ou grave): </label>
+                    <input type="text" id="especie" name="especie">
+                    <button type="submit">Calcular</button>
+                </form>
+            <div id = "verificar_quantidade_mililitros_soro"> 
+                {% if verificar_quantidade_mililitros_soro %}
+                <p> {{verificar_quantidade_mililitros_soro}}</p>
+                {% endif %}
+            </div> 
+        </main>
+    </body>
+</html>

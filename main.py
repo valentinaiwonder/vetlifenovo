@@ -6,7 +6,7 @@ pacientes = []
 
 @app.route('/')
 def index():
-    return render_template('index.html', pacientes=pacientes)
+    return render_template('index.html', pacientes=pacientes, consultas= consultas)
 
 
 @app.route('/faleconosco')
@@ -81,15 +81,13 @@ def verificar_editar_paciente(codigo):
         return render_template('editar_paciente.html', contato=contato)  # Renderiza o formulário de edição
 
 
+
 @app.route('/idadehumana')
 def idadehumana():
-    return render_template('idadehumana.html')
-
+    return render_template('idadehumana.html', verificar_idadehumana='')
 
 @app.route('/verificar_idadehumana', methods=['GET', 'POST'])
 def verificar_idadehumana():
-
-
     if request.method == 'POST':
         especie2 = request.form['especie2']
         idade2 = int(request.form['idade2'])
@@ -126,9 +124,10 @@ def verificar_idadehumana():
             else:
                 idade_humana = 36 + (idade2 - 5) * 4
 
-        return render_template('idadehumana.html', idadehumana=idadehumana)
-    else:
-        return render_template('idadehumana.html')
+        return render_template('idadehumana.html', verificar_idadehumana = f'A idade humana aproximada do {especie.lower()} é de aproximadamente {idade_humana} anos.')
+    return render_template('idadehumana.html', verificar_idadehumana = '')
+
+
 
 @app.route('/medicamento_mg')
 def medicamento_mg():
@@ -160,6 +159,6 @@ def verificar_quantidade_mililitros_soro():
         volume_fluidoterapia = 100 * peso_animal
 
     return render_template('desidratacao.html')
-    
+
 if __name__ == '__main__':
     app.run(debug=True)

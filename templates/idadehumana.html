@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Idade Humana do Animal</title>
+</head>
+<body>
+    <h1>Calculadora de Idade Humana do Animal</h1>
+    <form action="/verificar_idadehumana" method="post">
+        <label for="idade2">Adicione a idade do animal: </label>
+        <input type="number" id="idade2" name="idade2" required>
+        <br>
+        <label for="especie2">Espécie:</label>
+        <input type="text" id="especie2" name="especie2" required>
+        <br>
+        <button type="submit">Calcular</button>
+       
+    </form>
+    <div id="verificar_idadehumana">
+        {% if verificar_idadehumana %} <!-- Verifica se há um resultado a ser exibido -->
+            {{ verificar_idadehumana }} <!-- Exibe o resultado da verificação (par ou ímpar) -->
+        {% endif %}
+    </div>
+</body>
+</html>
