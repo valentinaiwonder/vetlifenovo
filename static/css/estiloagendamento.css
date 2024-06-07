@@ -44,9 +44,20 @@ h1 {
 }
 
 .consulta {
-    text-align: center;
     background-color: #5F85A0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 300px;
+    margin-left: 300px;
+    display: block;
+    justify-content: center;
+    flex-direction:row;
+    align-items: center;
+    padding:100px;
+    border-radius: 30px;
+
 }
+
 
 body {
     background-color: #E5FAFF;
