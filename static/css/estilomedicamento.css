@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --vermelho: red;
+    --branco:azure; 
+    --azulclaro:lightcyan;
+    --cor-principal: rgb(95, 158, 160);
+    --altura: 100px;
+
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items:center;
+    background-color:cornsilk;
+    height: 30vh;
+    gap: 10px;
+    background-color: var(--cor-principal);
+}
+
+.logo {
+    height: 120px;
+    width: 120px;
+}
+
+.palavras {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:none;
+    background-color:cadetblue;
+    color:aliceblue;
+    font-size: larger;
+    font-weight: 700px;
+}
+h1 {
+    color: white;
+    text-align: center;
+    background-color: #385366;
+    bottom: 50px;
+}
+
+.calculo {
+    background-color: #5F85A0;
+    margin-bottom: 50px;
+    margin-right: 300px;
+    margin-left: 300px;
+    display: block;
+    justify-content: center;
+    flex-direction:row;
+    align-items: center;
+    padding:100px;
+    border-radius: 12px;
+}
+
+body {
+    background-color: #E5FAFF;
+}
+
+.rodape {
+    background-color: #5F85A0;
+    display: flex;
+    color:white;
+    
+}
+
+.rodape img {
+    width: 300px;
+}
+
+.rodape .text1 {
+    padding-top: 50px;
+    margin: 60px;
+}
+
+.rodape .text2 {
+    padding-top: 50px;
+    margin: 60px;
+}
+
+footer {
+    background-color: #5cc9fb;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
