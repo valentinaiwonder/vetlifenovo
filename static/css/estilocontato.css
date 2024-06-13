@@ -40,25 +40,11 @@
 }
 
 .rodape .text1 {
-    padding-top: 25px;
+    padding-top: 50px;
     margin: 60px;
 }
 
 .rodape .text2 {
-    padding-top: 25px;
+    padding-top: 50px;
     margin: 60px;
 }
-/* Fim das informações */
-
-
-/* Início do rodapé CSS*/
-footer {
-    background-color: #5cc9fb;
-    color: #FFF;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-/* Fim do rodapé  CSS*/
