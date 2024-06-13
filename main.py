@@ -51,7 +51,11 @@ def paciente():
 
 @app.route('/verificar_paciente', methods=['GET', 'POST'])
 def verificar_paciente():
-
+    """
+    Rota para adicionar um novo paciente.
+    Se o método for POST, adiciona o novo paciente à lista.
+    Se não, exibe o formulário para adicionar um novo paciente.
+    """
     if request.method == 'POST':
         nome = request.form['nome']
         raca = request.form['raca']
@@ -63,16 +67,15 @@ def verificar_paciente():
         pacientes.append([codigo, nome, telefone, raca, peso, especie, nome_tutor1])
         return redirect('/')  # Redireciona de volta para a página inicial
     else:
-        return render_template('paciente.html')  # Renderiza o formulário de adicionar contato
+        return render_template('paciente.html')  # Renderiza o formulário de adicionar paciente
 
-
-@app.route('/editar_paciente')
-def editar_paciente():
-    return render_template('editar_paciente.html')
-
-@app.route('/verificar_editar_paciente/<int:codigo>', methods=['GET', 'POST'])
-def verificar_editar_paciente(codigo):
-
+@app.route('/editar_paciente/<int:codigo>', methods=['GET', 'POST'])
+def editar_paciente(codigo):
+    """
+    Rota para editar um paciente existente.
+    Se o método for POST, atualiza os detalhes do paciente com o ID fornecido.
+    Caso contrário, exibe o formulário preenchido com os detalhes do paciente para edição.
+    """
     if request.method == 'POST':
         nome = request.form['nome']
         raca = request.form['raca']
@@ -80,14 +83,16 @@ def verificar_editar_paciente(codigo):
         peso = request.form['peso']
         nome_tutor1 = request.form['nome_tutor1']
         telefone = request.form['telefone']
-        codigo = len(pacientes)
-        pacientes.append([codigo, nome, telefone, raca, peso, especie, nome_tutor1])
+        pacientes[codigo] = [codigo, nome, telefone, raca, peso, especie, nome_tutor1]
         return redirect('/')  # Redireciona de volta para a página inicial
-
     else:
-        contato = pacientes[codigo]
-        return render_template('editar_paciente.html', contato=contato)  # Renderiza o formulário de edição
+        paciente = pacientes[codigo]
+        return render_template('editar_paciente.html', paciente=paciente)  # Renderiza o formulário de edição
 
+@app.route('/apagar_paciente/<int:codigo>')
+def apagar_paciente(codigo):
+    del pacientes[codigo]
+    return redirect('/')  # Redireciona de volta para a página inicial
 
 
 @app.route('/idadehumana')
