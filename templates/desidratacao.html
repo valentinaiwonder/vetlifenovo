@@ -7,17 +7,22 @@
     <link rel="stylesheet" href="static/css/estilodesidratacao.css">
 </head>
 <body>
+
     <!-- Cabeçalho padrão -->
     <header>
         <nav class="cabeçalho">
             <div class="logovet">
+
                 <img class="logo" src="static/img/logovetlife.jpg" alt="Logo da empresa"/>
             </div>
             <a href="/"><button class="palavras">HOME</button></a>
+
             <a href="/serviço"><button class="palavras">SERVIÇOS</button></a>
-            <a href="/contato"><button class="palavras">CONTATO</button></a>
+
+            <a href="/faleconosco"><button class="palavras">CONTATO</button></a>
         </nav>
     </header>
+
     <!-- Fim do cabeçalho padrão -->
     <main>
         <h1>Calcule a quantidade de mililitros de <br/> soro que seu animal precisa</h1>
@@ -28,6 +33,7 @@
             <input type="text" id="grau_desidratacao" name="grau_desidratacao"><br/><br/>
             <button type="submit">Calcular</button>
         </form>
+        
         <div id="verificar_quantidade_mililitros_soro">
             {% if verificar_quantidade_mililitros_soro %}
                 <p>{{ verificar_quantidade_mililitros_soro }}</p>
