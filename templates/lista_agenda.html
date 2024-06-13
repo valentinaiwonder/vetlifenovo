@@ -30,12 +30,12 @@
         {% for consulta in consultas %} <!-- Loop através de cada contato na lista de contatos -->
         <li>{{ consulta[1] }} - {{ consulta[2] }} - {{ consulta[3] }} - {{ consulta[4] }} - {{ consulta[5] }}  <!-- Exibe as informações do contato, incluindo o nome, número de telefone e email. Se for favorito, adiciona um marcador -->
             <ul>
-                <li><a href="/apagar_contato/{{ loop.index0 }}">Apagar</a></li> <!-- Link para apagar o contato -->
+                <li><a href="/apagar_agendamento/{{ loop.index0 }}">Apagar</a></li> <!-- Link para apagar o contato -->
             </ul>
         </li>
         {% endfor %}
         </ul>
-        <a href="/adicionar_contato">Adicionar agenda</a> <!-- Link para adicionar um novo contato -->
+        <a href="/adicionar_agendamento">Adicionar agenda</a> <!-- Link para adicionar um novo contato -->
     </div>  
 
     <div class="rodape">

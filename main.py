@@ -47,9 +47,6 @@ def verificar_agendamento():
     else:
         return render_template('agendamento.html')
 
-#@app.route('/apagar_agendamento', methods=['GET', 'POST'])
-#def apagar_agendamento():
-#    return render_template('agendamento.html')
 
 @app.route('/apagar_agendamento/<int:codigo>', methods=['GET', 'POST'])
 def apagar_agendamento(codigo):
@@ -108,6 +105,7 @@ def apagar_paciente(codigo):
     return redirect('/')  # Redireciona de volta para a página inicial
 
 
+
 @app.route('/idadehumana')
 def idadehumana():
     return render_template('idadehumana.html', verificar_idadehumana='')
@@ -162,9 +160,9 @@ def medicamentomg():
 @app.route('/verificar_medicamentomg', methods=['GET', 'POST'])
 def verificar_medicamentomg():
     if request.method == 'POST':
-        peso = request.form['peso']
+        peso_animal1 = request.form['peso_animal1']
         doseremedio = int(request.form['doseremedio'])
-        medicamentomg = (peso * doseremedio)
+        medicamentomg = (peso_animal1 * doseremedio)
         return render_template('medicamentomg.html', medicamentomg=medicamentomg)
 
 
