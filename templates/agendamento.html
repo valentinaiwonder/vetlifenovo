@@ -29,10 +29,11 @@
     <main>
     <div class="consulta">
         <h1>Consulta</h1><br/><br/>
-        <label for="nome1">Nome do animal:</label>
-        <input type="text" id="nome1" name="nome"><br/><br/>
-        <label for="nome2">Nome do tutor:</label>
-        <input type="text" id="nome2" name="nome"><br/><br/>
+    <form action="/verificar_agendamento" method = "post">
+        <label for="nome_animal">Nome do animal:</label>
+        <input type="text" id="nome_animal" name="nome_animal"><br/><br/>
+        <label for="nome_tutor">Nome do tutor:</label>
+        <input type="text" id="nome_tutor" name="nome_tutor"><br/><br/>
         <label for="data">Data:</label>
         <input type="date" id="data" name="data"><br/><br/>
         <label for="horario">Horário:</label>
@@ -40,6 +41,7 @@
         <label for="sintomas">Sintomas:</label>
         <input type="text" id="sintomas" name="sintomas"><br/><br/>
         <button type="submit">Agendar</button>
+    </form>
     </div>
     
 

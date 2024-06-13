@@ -30,17 +30,18 @@ def verificar_agendamento():
         nome_tutor = request.form['nome_tutor']
         data = request.form['data']
         horario = request.form['horario']
+        sintomas = request.form['sintomas']
         codigo = len(consultas)
-        consultas.append([codigo, nome_animal, nome_tutor, data, horario,])
+        consultas.append([codigo, nome_animal, nome_tutor, data, horario,sintomas])
         return redirect('/')
     else:
         return render_template('agendamento.html')
 
-@app.route('/apagar_agendamento', methods=['GET', 'POST'])
-def apagar_agendamento():
-    return render_template('agendamento.html')
+#@app.route('/apagar_agendamento', methods=['GET', 'POST'])
+#def apagar_agendamento():
+#    return render_template('agendamento.html')
 
-@app.route('/apagar_agendamento/<int:codigo>')
+@app.route('/apagar_agendamento/<int:codigo>', methods=['GET', 'POST'])
 def apagar_agendamento(codigo):
     del consultas[codigo]
     return redirect('/index.html/') # Redireciona de volta para a página inicial
