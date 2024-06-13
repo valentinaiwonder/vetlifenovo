@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --vermelho: red;
+    --branco:azure; 
+    --azulclaro:lightcyan;
+    --cor-principal: rgb(95, 158, 160);
+    --altura: 100px;
+
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items:center;
+    background-color:cornsilk;
+    height: 30vh;
+    gap: 10px;
+    background-color: var(--cor-principal);
+}
+
+.logo {
+    height: 120px;
+    width: 120px;
+}
+
+.img_login {
+    height: 50px;
+    width: 50px;
+}
+
+.palavras {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:none;
+    background-color:cadetblue;
+    color:aliceblue;
+    font-size: larger;
+    font-weight: 700px;
+}
+
+.textodescritivo {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 270px;
+    background-color: #266299;
+}
+
+.fundo_doutor {
+    height: 40%;
+    width: 50%;
+    padding: 20px;
+}
+
+.parteum {
+    background-color:var(--azulclaro);
+    display:flex;
+}
+
+.nome {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 200%;
+    justify-content: space-between;
+    align-self:center;
+    background-color: var(--azulclaro);;
+}
+
+/* Agendamento */
+.saibamais {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-self: end;
+    justify-content: end;
+    color:white;
+    height: 80px;
+    width: 200px;
+    background-color:rgb(127, 171, 209) ;
+    font-weight: 700;
+    column: end;
+    font-size: 20px;
+}
+
+.consulta {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border:none;
+    background-color: var(--azulclaro);
+    color:aliceblue;
+    font-size: larger;
+    font-weight: 700px;
+}
+
+
+.apresentacao {
+    height: 700px;
+    background-color: var(--cor-principal);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.botaofunctions {
+    display: flex;
+    justify-content: space-between;
+    padding-top:25px;
+    background-color:var(--azulclaro);
+}
+
+.botaoidade {
+    padding: 8px;
+    font-size: 20px;
+    background: rgb(127, 171, 209);
+    border-radius: 25px;
+}
+
+.botaoremedio {
+    padding: 8px;
+    font-size: 20px;
+    background: rgb(127, 171, 209);
+    border-radius: 25px;
+}
+
+.botaosoro {
+    padding: 8px;
+    font-size: 20px;
+    background: rgb(127, 171, 209);
+    border-radius: 25px;
+}
+
+/* Informações anteriores ao rodapé CSS */
+.rodape {
+    background-color: #5F85A0;
+    display: flex;
+    color:white;  
+}
+
+.rodape img {
+    width: 300px;
+}
+
+.rodape .text1 {
+    padding-top: 25px;
+    margin: 60px;
+}
+
+.rodape .text2 {
+    padding-top: 25px;
+    margin: 60px;
+}
+/* Fim das informações */
+
+
+/* Início do rodapé CSS*/
+footer {
+    background-color: #5cc9fb;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/* Fim do rodapé  CSS*/
