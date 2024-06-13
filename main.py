@@ -36,7 +36,7 @@ def verificar_agendamento():
     else:
         return render_template('agendamento.html')
 
-@app.route('/apagar_agendamento' methods=['GET', 'POST'])
+@app.route('/apagar_agendamento', methods=['GET', 'POST'])
 def apagar_agendamento():
     return render_template('agendamento.html')
 
