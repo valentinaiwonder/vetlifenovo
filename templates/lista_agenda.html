@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a escala inicial e a largura da visualização para dispositivos móveis -->
+    <title>Lista de Contatos</title> <!-- Define o título da página -->
+    <link rel="stylesheet" href="/static/css/estiloagendamento.css">
+</head>
+<body>
+    <header>
+        <nav class="cabeçalho">
+            <div class="logovet">
+            <img class="logo" src="static/img/logovetlife.jpg"
+            alt="Logo da empresa"/> </div>
+
+            <a href="/"><button class="palavras">HOME</button>
+            </a>
+
+            <a href= "/serviço"><button class="palavras">SERVIÇOS</button>
+            </a>
+
+            <a href="/faleconosco"><button class="palavras">CONTATO</button>
+            </a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Lista de Agenda</h1> <!-- Título principal da página -->
+        <ul>
+            {% for consulta in consultas %} <!-- Loop através de cada contato na lista de contatos -->
+            <li>{{ consulta[1] }} - {{ consulta[2] }} - {{ consulta[3] }} - {{ consulta[4] }} - {{ consulta[5] }}  <!-- Exibe as informações do contato, incluindo o nome, número de telefone e email. Se for favorito, adiciona um marcador -->
+                <ul>
+                    <li><a href="/apagar_contato/{{ loop.index0 }}">Apagar</a></li> <!-- Link para apagar o contato -->
+                </ul>
+            </li>
+        {% endfor %}
+        </ul>
+        <a href="/adicionar_contato">Adicionar agenda</a> <!-- Link para adicionar um novo contato -->
+        <div class="rodape">
+            <img src="static/img/cachorro_rodape-removebg-preview.png" alt="cachorros">
+
+            <p class="text1">INSTITUCIONAL<br/><br>
+                Quem somos?<br/>
+                Contato<br/>
+                Política de privacidade<br/>
+                Notícias<br/>
+                Depoimento de clientes</p>
+
+            <p class="text2">ATENDIMENTO<br/><br>
+                TELEFONE:<br/>
+                (18) 99881-1123<br/>
+                (18) 3632-8922<br/>
+                HORÁRIOS:<br/>
+                segunda à sexta-feira - 8:00 às 12:00</p>
+        </div>
+    </main>
+<footer>
+    <p>© Copyright - 2024 Clínica veterinária. Todos os direitos reservados.</p>
+</footer>
+</body>
+</html>
+</body>
+</html>
