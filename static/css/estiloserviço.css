@@ -56,38 +56,12 @@
     text-align: center;
 }
 
-.imgs .um {
-    margin: 80px;
-    border-radius: 12px;
-    
-}
-
-.dois {
-    margin: 80px;
-    border-radius: 12px;
-}
-
-.tres {
-    margin: 80px;
-    border-radius: 12px;
-}
-.quatro {
-    margin: 80px;
-    border-radius: 12px;
-}
-
-.cinco{
-    margin: 80px;
-    border-radius: 12px;
-}
-
-.seis {
-    margin: 80px;
-    border-radius: 12px;
+.imgg {
+    text-align: center;
 }
 
 body {
-    background-color: #E5FAFF;
+    background-color:#E5FAFF ;
 }
 
 .rodape {
@@ -121,3 +95,4 @@ footer {
     width: 100%;
 
 }
+
