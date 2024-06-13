@@ -69,6 +69,8 @@ def verificar_paciente():
     else:
         return render_template('paciente.html')  # Renderiza o formulário de adicionar paciente
 
+# ABAIXO TEMOS O CÓDIGO DE EDIÇÃO DO PACIENTE:
+
 @app.route('/editar_paciente/<int:codigo>', methods=['GET', 'POST'])
 def editar_paciente(codigo):
     """
