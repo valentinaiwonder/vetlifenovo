@@ -36,12 +36,12 @@ def verificar_agendamento():
     else:
         return render_template('agendamento.html')
 
-@app.route('/apagar_consulta')
-def apagar_consulta():
+@app.route('/apagar_agendamento' methods=['GET', 'POST'])
+def apagar_agendamento():
     return render_template('agendamento.html')
 
-@app.route('/verificar_apagar_consulta/<int:codigo>')
-def verificar_apagar_consulta(codigo):
+@app.route('/apagar_agendamento/<int:codigo>')
+def apagar_agendamento(codigo):
     del consultas[codigo]
     return redirect('/index.html/') # Redireciona de volta para a página inicial
 
