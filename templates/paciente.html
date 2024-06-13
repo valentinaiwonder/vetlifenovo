@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
-    <link rel="stylesheet" href="static/css/estilocontato.css">
+    <link rel="stylesheet" href="static/css/estilopaciente.css">
 </head>
 <body>
     <!-- Cabeçalho padrão -->
@@ -26,33 +26,54 @@
         </nav>
         </div>
     </header>
+
     <main>
+
         <h1> Cadastro: seja bem-vindo à clínica VetLife! </h1>
-        <form action="/verificar_paciente" method = "post">
+        <form class="calculo" action="/verificar_paciente" method = "post">
             <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome">
+            <input type="text" id="nome" name="nome"><br/><br/>
 
             <label for="especie">Espécie:</label>
-            <input type="text" id="especie" name="especie">
+            <input type="text" id="especie" name="especie"><br/><br/>
 
             <label for="raca">Raça:</label>
-            <input type="text" id="raca" name="raca">
+            <input type="text" id="raca" name="raca"><br/><br/>
 
             <label for="nome_tutor1">Nome do tutor:</label>
-            <input type="text" id="nome_tutor1" name="nome_tutor1">
+            <input type="text" id="nome_tutor1" name="nome_tutor1"><br/><br/>
 
             <label for="nome">Peso do animal:</label>
-            <input type="text" id="peso" name="peso" step="0.01">
+            <input type="text" id="peso" name="peso" step="0.01"><br/><br/>
             
             <label for="nome">Telefone:</label>
-            <input type="text" id="telefone" name="telefone">
+            <input type="text" id="telefone" name="telefone"><br/><br/>
 
             <a href= "/home2"><button class="botaosigma">
                 Cadastrar</button>
             </a>
 
         </form>
+
+        <div class="rodape">
+            <img src="static/img/cachorro_rodape-removebg-preview.png" alt="cachorros">
+            <p class="text1">INSTITUCIONAL<br/><br>
+                Quem somos?<br/>
+                Contato<br/>
+                Política de privacidade<br/>
+                Notícias<br/>
+                Depoimento de clientes</p>
+
+            <p class="text2">ATENDIMENTO<br/><br>
+                TELEFONE:<br/>
+                (18) 99881-1123<br/>
+                (18) 3632-8922<br/>
+                HORÁRIOS:<br/>
+                segunda à sexta-feira - 8:00 às 12:00</p>
+        </div>
+
     </main>
+
     <footer>
         <p>© Copyright - 2024 Clínica veterinária. Todos os direitos reservados.</p>
     </footer>
