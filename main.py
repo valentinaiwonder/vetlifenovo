@@ -150,17 +150,17 @@ def verificar_idadehumana():
 
 
 
-@app.route('/medicamento_mg')
-def medicamento_mg():
-    return render_template('medicamento_.html')
+@app.route('/medicamentomg')
+def medicamentomg():
+    return render_template('medicamentomg.html')
 
-@app.route('/verificar_medicamento_mg', methods=['GET', 'POST'])
-def verificar_medicamento_mg():
+@app.route('/verificar_medicamentomg', methods=['GET', 'POST'])
+def verificar_medicamentomg():
     if request.method == 'POST':
         peso = request.form['peso']
         doseremedio = int(request.form['doseremedio'])
-        medicamento_mg = (peso * doseremedio)
-        return render_template('medicamento_mg.html', medicamento_mg=medicamento_mg)
+        medicamentomg = (peso * doseremedio)
+        return render_template('medicamentomg.html', medicamentomg=medicamentomg)
 
 
 @app.route('/desidratacao')
