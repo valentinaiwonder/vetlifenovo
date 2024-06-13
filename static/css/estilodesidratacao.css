@@ -29,7 +29,7 @@
     padding-bottom: 3%;;
     background-color: #5F85A0;
     margin-left: 20%;
-    margin-right: 20%;;
+    margin-right: 20%;
     border-radius: 5%;
 
 }
@@ -58,7 +58,7 @@
     font-weight: 700px;
 }
 
-/* h1 {
+ h1 {
     color: white;
     text-align: center;
     background-color: #385366;
@@ -110,4 +110,4 @@ footer {
     padding: 10px 0;
     position: fixed;
     bottom: 0;
-    width: 100%; }
+    width: 100%; } 
