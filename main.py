@@ -75,6 +75,10 @@ def verificar_paciente():
     else:
         return render_template('paciente.html')  # Renderiza o formulário de adicionar paciente
 
+@app.route('/home2')
+def home2():
+    return render_template('home2.html')
+
 # ABAIXO TEMOS O CÓDIGO DE EDIÇÃO DO PACIENTE:
 
 @app.route('/editar_paciente/<int:codigo>', methods=['GET', 'POST'])
@@ -183,7 +187,6 @@ def verificar_quantidade_mililitros_soro():
             return render_template('desidratacao.html', verificar_quantidade_mililitros_soro='Grau de desidratação inválido.')
 
         return render_template('desidratacao.html', verificar_quantidade_mililitros_soro=f'O grau de desidratação é {grau_desidratacao} e a fluidoterapia é de {volume_fluidoterapia} mL.')
-
 
 if __name__ == '__main__':
     app.run(debug=True)
