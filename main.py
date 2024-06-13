@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 consultas = []
 pacientes = []
-peso_animal1 = []
+
 @app.route('/')
 def index():
     return render_template('index.html', pacientes=pacientes, consultas= consultas)
@@ -12,6 +12,11 @@ def index():
 @app.route('/faleconosco')
 def faleconosco():
     return render_template('faleconosco.html')
+
+
+@app.route('/home2')
+def home2():
+    return render_template('home2.html')
 
 @app.route('/serviço')
 def serviço():
@@ -49,7 +54,7 @@ def verificar_agendamento():
 @app.route('/apagar_agendamento/<int:codigo>', methods=['GET', 'POST'])
 def apagar_agendamento(codigo):
     del consultas[codigo]
-    return redirect('/index.html/') # Redireciona de volta para a página inicial
+    return redirect('/lista_agenda') # Redireciona de volta para a página inicial
 
 @app.route('/paciente')
 def paciente():
@@ -71,13 +76,9 @@ def verificar_paciente():
         telefone = request.form['telefone']
         codigo = len(pacientes)
         pacientes.append([codigo, nome, telefone, raca, peso, especie, nome_tutor1])
-        return redirect('/')  # Redireciona de volta para a página inicial
+        return redirect('/home2')  # Redireciona para a página de usuário
     else:
         return render_template('paciente.html')  # Renderiza o formulário de adicionar paciente
-
-@app.route('/home2')
-def home2():
-    return render_template('home2.html')
 
 # ABAIXO TEMOS O CÓDIGO DE EDIÇÃO DO PACIENTE:
 
@@ -161,9 +162,9 @@ def medicamentomg():
 @app.route('/verificar_medicamentomg', methods=['GET', 'POST'])
 def verificar_medicamentomg():
     if request.method == 'POST':
-        peso = request.form['peso_animal1']
+        peso = request.form['peso']
         doseremedio = int(request.form['doseremedio'])
-        medicamentomg = (peso_animal1 * doseremedio)
+        medicamentomg = (peso * doseremedio)
         return render_template('medicamentomg.html', medicamentomg=medicamentomg)
 
 
