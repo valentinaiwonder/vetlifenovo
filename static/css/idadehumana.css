@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+:root{
+    --vermelho: red;
+    --branco:azure; 
+    --azulclaro:lightcyan;
+    --cor-principal: rgb(95, 158, 160);
+    --altura: 100px;
+
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items:center;
+    background-color:cornsilk;
+    height: 30vh;
+    gap: 10px;
+    background-color: var(--cor-principal);
+}
+
+.logo {
+    height: 120px;
+    width: 120px;
+}
+
+
+
+
+
+
+.rodape {
+    background-color: #5F85A0;
+    display: flex;
+    color:white;  
+}
+
+.rodape img {
+    width: 300px;
+}
+
+.rodape .text1 {
+    padding-top: 50px;
+    margin: 60px;
+}
+
+.rodape .text2 {
+    padding-top: 50px;
+    margin: 60px;
+}
+
+.tt{
+    background-color: #5F85A0;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.kk{
+ text-align: center;
+}
+body {
+    background-color: #E5FAFF;
+  
+}
+.ww{
+    font-size: 30px;
+}
+.ii{
+    padding: 10px;
+    padding-left: 60px;
+}
+
+.hh {
+    background-color: #5F85A0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 300px;
+    margin-left: 300px;
+    display: block;
+    justify-content: center;
+    flex-direction:row;
+    align-items: center;
+    padding:100px;
+    border-radius: 30px;
+
+}
+.jj{
+    font-size: 30px;
+}
+.oo{
+    padding: 10px;
+    padding-left: 60px;  
+}

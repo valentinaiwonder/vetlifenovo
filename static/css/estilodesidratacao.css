@@ -58,7 +58,51 @@
     font-weight: 700px;
 }
 
-/* Início do rodapé */
+/* h1 {
+    color: white;
+    text-align: center;
+    background-color: #385366;
+    bottom: 50px;
+}
+
+.calculo {
+    background-color: #5F85A0;
+    margin-bottom: 50px;
+    margin-right: 300px;
+    margin-left: 300px;
+    display: block;
+    justify-content: center;
+    flex-direction:row;
+    align-items: center;
+    padding:100px;
+    border-radius: 12px;
+}
+
+body {
+    background-color: #E5FAFF;
+}
+
+.rodape {
+    background-color: #5F85A0;
+    display: flex;
+    color:white;
+    
+}
+
+.rodape img {
+    width: 300px;
+}
+
+.rodape .text1 {
+    padding-top: 50px;
+    margin: 60px;
+}
+
+.rodape .text2 {
+    padding-top: 50px;
+    margin: 60px;
+}
+
 footer {
     background-color: #5cc9fb;
     color: #FFF;
@@ -66,5 +110,4 @@ footer {
     padding: 10px 0;
     position: fixed;
     bottom: 0;
-    width: 100%;
-}
+    width: 100%; }
