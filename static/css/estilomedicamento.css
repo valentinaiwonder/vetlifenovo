@@ -60,12 +60,36 @@ h1 {
 body {
     background-color: #E5FAFF;
 }
+.med {
+    background-color: #5F85A0;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-right: 300px;
+    margin-left: 300px;
+    display: block;
+    justify-content: center;
+    flex-direction:row;
+    align-items: center;
+    padding:100px;
+    border-radius: 30px;
+}
 
+
+
+footer {
+    background-color: #5cc9fb;
+    color: #FFF;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
 .rodape {
     background-color: #5F85A0;
     display: flex;
-    color:white;
-    
+    color:white;  
 }
 
 .rodape img {
@@ -80,15 +104,4 @@ body {
 .rodape .text2 {
     padding-top: 50px;
     margin: 60px;
-}
-
-footer {
-    background-color: #5cc9fb;
-    color: #FFF;
-    text-align: center;
-    padding: 10px 0;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-
 }

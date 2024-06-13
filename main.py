@@ -3,7 +3,7 @@ app = Flask(__name__)
 
 consultas = []
 pacientes = []
-
+peso_animal1 = []
 @app.route('/')
 def index():
     return render_template('index.html', pacientes=pacientes, consultas= consultas)
@@ -161,9 +161,9 @@ def medicamentomg():
 @app.route('/verificar_medicamentomg', methods=['GET', 'POST'])
 def verificar_medicamentomg():
     if request.method == 'POST':
-        peso = request.form['peso']
+        peso = request.form['peso_animal1']
         doseremedio = int(request.form['doseremedio'])
-        medicamentomg = (peso * doseremedio)
+        medicamentomg = (peso_animal1 * doseremedio)
         return render_template('medicamentomg.html', medicamentomg=medicamentomg)
 
 
