@@ -23,6 +23,11 @@ def serviço():
 def agendamento():
     return render_template('agendamento.html')
 
+@app.route('/lista_agenda')
+def lista_agenda():
+    return render_template('lista_agenda.html', consultas=consultas)
+
+
 @app.route('/verificar_agendamento', methods=['GET', 'POST'])
 def verificar_agendamento():
     if request.method == 'POST':
@@ -33,7 +38,7 @@ def verificar_agendamento():
         sintomas = request.form['sintomas']
         codigo = len(consultas)
         consultas.append([codigo, nome_animal, nome_tutor, data, horario,sintomas])
-        return redirect('/')
+        return redirect('lista_agenda')
     else:
         return render_template('agendamento.html')
 
