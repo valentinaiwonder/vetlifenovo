@@ -58,12 +58,7 @@
     font-weight: 700px;
 }
 
- h1 {
-    color: white;
-    text-align: center;
-    background-color: #385366;
-    bottom: 50px;
-}
+
 
 .calculo {
     background-color: #5F85A0;
@@ -78,6 +73,14 @@
     border-radius: 122x;
 }
 
+ h1 {
+
+    color: white;
+    text-align: center;
+    background-color: #385366;
+    bottom: 50px;
+    
+}
 body {
     background-color: #E5FAFF;
 }
